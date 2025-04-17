@@ -129,12 +129,12 @@ fi
 #     popd
 # fi
 
-if [ ! -z $CARLA_UNREAL_ENGINE_PATH ] && [ -d $CARLA_UNREAL_ENGINE_PATH ]; then
-    echo "Found CARLA Unreal Engine at $CARLA_UNREAL_ENGINE_PATH"
-else
-    echo "CARLA_UNREAL_ENGINE_PATH is not set or invalid."
-    exit 1
-fi
+# if [ ! -z $CARLA_UNREAL_ENGINE_PATH ] && [ -d $CARLA_UNREAL_ENGINE_PATH ]; then
+#     echo "Found CARLA Unreal Engine at $CARLA_UNREAL_ENGINE_PATH"
+# else
+#     echo "CARLA_UNREAL_ENGINE_PATH is not set or invalid."
+#     exit 1
+# fi
 
 # -- BUILD CARLA --
 echo "Configuring the CARLA CMake project..."
