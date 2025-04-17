@@ -10,6 +10,10 @@ python_root=
 workspace_path="$(dirname $(realpath "${BASH_SOURCE[-1]}"))"
 echo "workspace_path=$workspace_path"
 
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+parent_dir="$(dirname "$script_dir")"
+CARLA_UNREAL_ENGINE_PATH="$parent_dir/UnrealEngine"
+
 options=$(\
     getopt \
     -o "i,p,l,pyroot:" \
