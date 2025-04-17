@@ -99,6 +99,8 @@ else
         Carla
 fi
 
+echo "Debug: CARLA_UNREAL_ENGINE_PATH=$CARLA_UNREAL_ENGINE_PATH"
+
 # -- DOWNLOAD + BUILD UNREAL ENGINE --
 # if [ ! -z $CARLA_UNREAL_ENGINE_PATH ] && [ -d $CARLA_UNREAL_ENGINE_PATH ]; then
 #     echo "Found CARLA Unreal Engine at $CARLA_UNREAL_ENGINE_PATH"
